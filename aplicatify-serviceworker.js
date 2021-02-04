@@ -1,2 +1,2 @@
 /* Aplicatify */
-importScripts(" https://3fce11bad687.ngrok.io/aplicatify-serviceworker-internal.js");
+importScripts("https://e79b6619a6ff.ngrok.io/aplicatify-serviceworker-internal.js");
