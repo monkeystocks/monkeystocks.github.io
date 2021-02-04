@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Faria Lima Boy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="Gerador de frases do Faria Lima Boy!">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- APLICATIFY:START -->
+    <script src= https://3fce11bad687.ngrok.io/public/manifest/23.json rel="manifest" crossorigin="anonymous" ></script>
+    <script src= https://3fce11bad687.ngrok.io/serviceworker-register-aplicatify.js type="text/javascript" crossorigin="anonymous" async="" >var shop_id=23</script>
+    <script src= https://3fce11bad687.ngrok.io/public/preferences/23.js type="text/javascript" crossorigin="anonymous" async="" ></script>
+    <!-- APLICATIFY:END -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 content">
+                <div class="mb-4"></div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 align-self-center">
+                <div class="card card-small">
+                    <div class="card-header">
+                        <h3>Faria Lima Boy</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="content-body">
+                            <div class="card-text mt-4">
+                                <div class="text-body">
+                                    <p id="text-area">
+                                    </p>
+                                    <span class="float-right">- <a href="https://www.instagram.com/monkeystocks/?hl=pt">@monkeystocks</a></span>
+                                </div>
+                            </div>
+                            <button id="generate" type="button" class="btn btn-primary col-12">
+                                Gerar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+
+<script>
+    Array.prototype.sample = function () {
+        return this[Math.floor(Math.random() * this.length)]
+    }
+
+    c1 = ['No mundo digital, ',
+        'Proativamente falando, ',
+        'Com o apoio dos stakeholders, ',
+        'Com o avanço da mobilidade, ',
+        'Em termos de melhores práticas, ',
+        'Na quebra de paradigma, ',
+        'Já que estamos pensando fora da caixa, ',
+        'Falando em alinhamento, ',
+        'Para sair do bussines as usual, ',
+        'Levando em conta a nova economia, ']
+    c2 = ['a monetização ',
+        'a globalização ',
+        'o complience ',
+        'a diversidade ',
+        'a sustentabilidade ',
+        'a convergência ',
+        'o foco no core business ',
+        'a inovação ',
+        'a responsividade ',
+        'a rede social ']
+
+    c3 = ['determina o fator de engajamento ',
+        'pode significar oportunidades ',
+        'habilita o framework de análise ',
+        'é o touchpoint ',
+        'pode ser parte da solução ',
+        'gerencia as expectativas ',
+        'proporciona o empowerment ',
+        'é urgente e importante ',
+        'deveria ser uma lição aprendida ',
+        'é game-changer ']
+
+    c4 = ['nas ações de valor agregado.',
+        'nas ações on e off line.',
+        'no universo de consumidores multitela.',
+        'para nos posicionarmos no cutting-edge do segmento.',
+        'para a determinação do ROI da empresa.',
+        'em uma organização de classe mundial.',
+        'nas visões holísticas dos projetos.',
+        'para sair da zona de conforto.',
+        'na busca da relação risco x retorno.',
+        'para a sinergia das ações planejadas.']
+
+
+    function generate(id) {
+        let txt = '';
+        [c1, c2, c3, c4].forEach(function (x, i) {
+            txt += x.sample();
+        });
+        $('#' + id).text(txt)
+    }
+
+
+    $("#generate").click(function () {
+        generate('text-area');
+    })
+
+    $(document).ready(function () {
+        generate('text-area')
+    })
+</script>
+
+</html>
