@@ -1,0 +1,21 @@
+{
+  "name": "Casa Cafe e Mel",
+  "short_name": "Casa Cafe e Mel",
+  "start_url": "/?ref=aplicatify&utm_source=aplicatify&utm_medium=app&utm_campaign=app",
+  "icons": [
+    {
+      "src": "https://appify-skin.s3.amazonaws.com/variants/qb813wbge4kwtsjvy5melg7gqlxl/530d1683ed72e14051470cbbb25c050dfa61f8ea77900253b8337a6cf4fe5862",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://appify-skin.s3.amazonaws.com/variants/qb813wbge4kwtsjvy5melg7gqlxl/f60e3305217eff1fdd86f4c95148ca1abadf61446f1d472a97d1dc9f4086c87d",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color":  "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait"
+}
